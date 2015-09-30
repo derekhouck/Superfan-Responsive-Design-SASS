@@ -82,14 +82,7 @@ a:active {
 a img {
   border: 0; }
 
-/*--------------------------------------------------------------
-2.0 Typography
---------------------------------------------------------------*/
-body,
-button,
-input,
-select,
-textarea {
+body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1.6rem;
   line-height: 1.5; }
@@ -97,20 +90,15 @@ textarea {
 p {
   margin-bottom: 1.5em; }
 
-/*--------------------------------------------------------------
-3.0 Elements
---------------------------------------------------------------*/
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
   max-width: 100%
   /* Adhere to container width. */ }
 
+/* Navigation */
 /*--------------------------------------------------------------
-5.0 Navigation
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-5.1 Links
+Links
 --------------------------------------------------------------*/
 a {
   color: #51C6DD; }
@@ -124,7 +112,7 @@ a:active {
   color: #A3C639; }
 
 /*--------------------------------------------------------------
-5.2 Menus
+Menus
 --------------------------------------------------------------*/
 .main-navigation ul {
   text-align: right; }
@@ -153,7 +141,7 @@ a:active {
   .main-navigation ul {
     display: none; } }
 /*--------------------------------------------------------------
-6.0 Accessibility
+Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers */
 .screen-reader-text {
@@ -182,7 +170,7 @@ a:active {
   /* Above WP toolbar */ }
 
 /*--------------------------------------------------------------
-8.0 Clearings
+Clearings
 --------------------------------------------------------------*/
 .site-header:after {
   content: '';
@@ -192,14 +180,14 @@ a:active {
   clear: both; }
 
 /*--------------------------------------------------------------
-10.0 Content
+Content
 --------------------------------------------------------------*/
 #content {
   margin: 0 auto;
   max-width: 75em; }
 
 /*--------------------------------------------------------------
-10.1 Posts and pages
+Posts and pages
 --------------------------------------------------------------*/
 .hentry {
   margin: 0 0 1.5em; }
@@ -210,7 +198,7 @@ a:active {
   margin: 1.5em 0 0; }
 
 /*--------------------------------------------------------------
-13.0 Layout
+Layout
 --------------------------------------------------------------*/
 .site-content {
   padding: 0 2em; }
@@ -222,7 +210,7 @@ a:active {
   width: 100%; }
 
 /*--------------------------------------------------------------
-13.1 Header
+Header
 --------------------------------------------------------------*/
 .site-branding {
   float: left;
@@ -235,11 +223,20 @@ a:active {
   padding: 10px 2em; }
 
 /*--------------------------------------------------------------
-14.0 Templates
+Small screeens
 --------------------------------------------------------------*/
-/*--------------------------------------------------------------
-14.3 Superfan
---------------------------------------------------------------*/
+@media screen and (max-width: 600px) {
+  .main-navigation {
+    clear: both;
+    width: 100%; }
+    .main-navigation ul {
+      text-align: center; }
+
+  .home .site-branding, .site-branding {
+    margin: 0 auto;
+    max-width: 300px;
+    width: 100%; } }
+/* Superfan */
 #indiegathering {
   background: #fff;
   border: 1px solid #e34e50; }
@@ -289,20 +286,5 @@ a:active {
     text-align: center; }
   .page-template-superfan-php .page-title {
     padding: 20px 0; }
-
-/*--------------------------------------------------------------
-15.0 Small screeens
---------------------------------------------------------------*/
-@media screen and (max-width: 600px) {
-  .main-navigation {
-    clear: both;
-    width: 100%; }
-    .main-navigation ul {
-      text-align: center; }
-
-  .home .site-branding, .site-branding {
-    margin: 0 auto;
-    max-width: 300px;
-    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
