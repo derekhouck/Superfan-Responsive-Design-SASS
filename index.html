@@ -5,25 +5,32 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Superfan | Section Thirteen</title>
 		<link rel='stylesheet' id='section-thirteen-style-css'  href='style.css' type='text/css' media='all' />
+		<script>
+			// Picture element HTML5 shiv
+			document.createElement( "picture" );
+		</script>
+	  	<script src="picturefill.min.js" async></script>
 	</head>
-	<body class="page page-template-superfan-php">
+	<body class="superfan">
 		<header class="site-header">
-			<div class="site-branding">
+			<h1 class="site-branding">
 				<a href="http://sectionthirteen.com/">
-					<img src="http://www.sectionthirteen.com/wp-content/uploads/2014/05/cropped-s13logo-trimmed.png" />
+					<img src="http://www.sectionthirteen.com/wp-content/uploads/2014/05/cropped-s13logo-trimmed.png" alt="Section Thirteen" />
 				</a>
-			</div>
+			</h1>
 			<nav id="site-navigation" class="main-navigation">
-				<button class="menu-toggle">Site Menu</button>
 				<ul>
 					<li><a href="http://sectionthirteen.com/superfan/">Superfan</a></li>
 					<li><a href="http://sectionthirteen.com/category/press-releases/">Press Releases</a></li>
 				</ul>	
 			</nav><!-- #site-navigation -->
 		</header>
-		<div id="content" class="site-content">
+		<main id="content" class="site-content">
 			<header class="page-header">
-				<img src="http://sectionthirteen.com/wp-content/uploads/2014/05/Website-banner.jpg" alt="Everyone&#039;s seen her nude. He&#039;s the first to see her naked." />						
+				<picture>
+					<source srcset="img/Website-banner.jpg" media="(min-width: 600px)" />
+					<img srcset="img/Website-banner-mobile.jpg" alt="Everyone&#039;s seen her nude. He&#039;s the first to see her naked." />
+				</picture>						
 				<h1 class="page-title">
 					<img src="http://sectionthirteen.com/wp-content/uploads/2014/05/superfan-logo-black.png" alt="Superfan" />
 				</h1>
@@ -35,14 +42,14 @@
 				</nav><!-- #superfan-navigation -->
 			</header><!-- .page-header -->
 			<div class="entry-content">
-				<div class="laurels">
-					<a id="indiegathering" href="http://theindiegathering.com/2015screenings.php"><img src="http://sectionthirteen.com/wp-content/uploads/2014/05/15selection-300x122.png" /></a>
-					<a href="http://sectionthirteen.com/wp-content/uploads/2014/05/mail.google.com_.jpg"><img src="http://sectionthirteen.com/wp-content/uploads/2014/05/mail.google.com_-300x148.jpg" /></a>
-					<a href="http://accoladecompetition.org/?page_id=4208"><img src="http://sectionthirteen.com/wp-content/uploads/2014/05/Accolade-Recognition-logo-WHITE-300x159.png" /></a>
-				</div>
+				<ul class="laurels">
+					<li id="indiegathering"><a href="http://theindiegathering.com/2015screenings.php"><img src="http://sectionthirteen.com/wp-content/uploads/2014/05/15selection-300x122.png" /></a></li>
+					<li><a href="http://sectionthirteen.com/wp-content/uploads/2014/05/mail.google.com_.jpg"><img src="http://sectionthirteen.com/wp-content/uploads/2014/05/mail.google.com_-300x148.jpg" /></a></li>
+					<li><a href="http://accoladecompetition.org/?page_id=4208"><img src="http://sectionthirteen.com/wp-content/uploads/2014/05/Accolade-Recognition-logo-WHITE-300x159.png" /></a></li>
+				</ul>
 				<p>For $3.99 a minute, Sam can talk privately to the most beautiful woman he has ever seen. It’s the most personal interaction a fan can get with a cam girl. But though everyone&#8217;s seen her nude, he&#8217;s the first to see her naked. When it&#8217;s that intimate, how can you keep it impersonal?</p>
 			</div><!-- .entry-content -->
-			<div class="news">
+			<section class="news">
 				<h2>News</h2>
 					<article class="hentry">
 						<h1><a href="http://sectionthirteen.com/2015/09/14/superfan-wins-award-in-accolade-global-film-competition/">‘Superfan’ Wins Award in Accolade Global Film Competition</a></h1>
@@ -84,8 +91,8 @@
 								Posted in <a href="http://sectionthirteen.com/category/press-releases/">Press Releases</a>, <a href="http://sectionthirteen.com/category/superfan/">Superfan</a>							
 						</span>
 					</article>
-			</div><!-- .news -->
-		</div><!-- #content -->
+			</section><!-- .news -->
+		</main><!-- #content -->
 		<footer class="site-footer">
 				&copy; 2014 Section Thirteen, All Rights Reserved.
 		</footer>

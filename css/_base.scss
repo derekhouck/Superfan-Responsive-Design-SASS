@@ -41,30 +41,9 @@ nav	{
 		display: inline;
 	}
 }
-.main-navigation	{
-	ul	{
-		text-align: right;
-	}
-}
 .secondary-navigation	{
 	font-size: 1.125em;
 	text-transform: uppercase;
-}
-/* Small menu */
-.menu-toggle,
-.main-navigation.toggled .nav-menu {
-	display: block;
-}
-.main-navigation ul {
-	display: none;
-}
-@media screen and (min-width: 600px) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul	{
-		display: block;
-	}
 }
 
 /*--------------------------------------------------------------
@@ -95,18 +74,6 @@ Accessibility
 	top: 5px;
 	width: auto;
 	z-index: 100000; /* Above WP toolbar */
-}
-
-/*--------------------------------------------------------------
-Clearings
---------------------------------------------------------------*/
-.site-header:after {
-	content: '';
-	display: table;
-}
-
-.site-header:after {
-	clear: both;
 }
 
 /*--------------------------------------------------------------
@@ -141,32 +108,32 @@ Layout
 /*--------------------------------------------------------------
 Header
 --------------------------------------------------------------*/
-.site-branding	{
-	float: left;
-	text-align: center;
-	width: 25%;
-}
 .site-header	{
+	@include flexbox;
+	@include flex-flow(row wrap);
+	@include flex-just(space-between);
+	@include align-items(center);
 	background: white;
 	color: $text-color;
+	margin-bottom: 2em;
 	padding: 10px 2em;
-}
-
-
-/*--------------------------------------------------------------
-Small screeens
---------------------------------------------------------------*/
-@media screen and (max-width: 600px) {
-	.main-navigation {
-		clear: both;
+	.main-navigation	{
+		text-align: center;
 		width: 100%;
-		ul	{
-			text-align: center;
+	}
+	.site-branding	{
+		width: 100%;
+	}
+}
+@media screen and (min-width: 600px)	{
+	.site-header	{
+		.main-navigation	{
+			@include flex(1 1 0);
+			text-align: right;
+		}
+		.site-branding	{
+			max-width: 25%;
 		}
 	}
-	.home .site-branding, .site-branding	{
-		margin: 0 auto;
-		max-width: 300px;
-		width: 100%;
-	}
 }
+

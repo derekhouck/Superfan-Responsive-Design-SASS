@@ -14,11 +14,12 @@
 	@include flex-just(center);
 	@include align-items(center);
 	@include align-content(center);
-	a	{
-		margin: auto;
+	li	{
+		max-width: 50%;
+		margin: 1em;
 	}
 }
-.page-template-superfan-php	{
+.superfan	{
 	background: black;
 	color: white;
 	a {
