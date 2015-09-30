@@ -114,32 +114,34 @@ a:active {
 /*--------------------------------------------------------------
 Menus
 --------------------------------------------------------------*/
-.main-navigation ul {
-  text-align: right; }
-
-.main-navigation li, .secondary-navigation li {
-  display: inline; }
-
-.main-navigation a, .secondary-navigation a {
+nav a {
   display: inline-block;
   padding: 10px;
   text-decoration: none; }
+nav li {
+  display: inline; }
+
+.main-navigation ul {
+  text-align: right; }
 
 .secondary-navigation {
   font-size: 1.125em;
   text-transform: uppercase; }
 
 /* Small menu */
-.menu-toggle {
+.menu-toggle,
+.main-navigation.toggled .nav-menu {
+  display: block; }
+
+.main-navigation ul {
   display: none; }
 
-@media screen and (max-width: 600px) {
-  .menu-toggle,
-  .main-navigation.toggled .nav-menu {
-    display: block; }
+@media screen and (min-width: 600px) {
+  .menu-toggle {
+    display: none; }
 
   .main-navigation ul {
-    display: none; } }
+    display: block; } }
 /*--------------------------------------------------------------
 Accessibility
 --------------------------------------------------------------*/
@@ -186,9 +188,6 @@ Content
   margin: 0 auto;
   max-width: 75em; }
 
-/*--------------------------------------------------------------
-Posts and pages
---------------------------------------------------------------*/
 .hentry {
   margin: 0 0 1.5em; }
 
