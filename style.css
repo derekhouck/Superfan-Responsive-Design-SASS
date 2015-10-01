@@ -1,3 +1,10 @@
+/*  
+Title: Superfan - Responsive Design & SASS
+Description: Code sample showcasing responsive design using SASS.
+Author: Derek Houck
+Author URI: http://webdesign.derekhouck.com/
+Comments: 
+*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -274,5 +281,4 @@ Header
     text-align: center; }
   .superfan .page-title {
     padding: 20px 0; }
-
 /*# sourceMappingURL=style.css.map */
